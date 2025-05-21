@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap');
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #F5F5F5;
+}
+
+ul, ol {
+    list-style: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 2rem; 
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px;
+    width: auto;
+    margin-right: 2rem;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem; 
+    transition: color 0.3s ease;
+}
+
+
+
+.about-project {
+    background: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about-project .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about-project h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 3rem; 
+    text-align: center;
+}
+
+.about-project h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4CAF50;
+    margin: 1.5rem 0 1rem;
+    font-size: 2.4rem; 
+}
+
+.about-project h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+    margin: 1rem 0 0.5rem;
+    font-size: 2.2rem; 
+}
+
+.about-project p {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem;
+}
+
+.about-project ul, .about-project ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-project ul li, .about-project ol li {
+    font-size: 2.5rem; 
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.about-project ul li::before {
+    content: "•";
+    color: #4CAF50;
+    font-weight: bold;
+    position: absolute;
+    left: -1rem;
+}
+
+.about-project img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+.about-project figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
+
+.about-project .video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem auto;
+    display: block;
+}
+
+.resources-list li {
+    font-size: 1.6rem; 
+    margin-bottom: 0.5rem;
+}
+
+.resources-list a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.resources-list a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    header nav {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    header img {
+        max-height: 40px;
+        margin-right: 0;
+    }
+
+    header nav a {
+        font-size: 1.8rem; 
+    }
+
+    .about-project .wrapper {
+        padding: 0 1rem;
+    }
+
+    .about-project h1 {
+        font-size: 2.4rem; 
+    }
+
+    .about-project h2 {
+        font-size: 2rem; 
+    }
+
+    .about-project h3 {
+        font-size: 1.8rem; 
+    }
+
+    .about-project p {
+        font-size: 1.6rem; 
+    }
+
+    .about-project ul li, .about-project ol li {
+        font-size: 1.6rem; 
+    }
+
+    .about-project img {
+        max-width: 70%;
+    }
+
+    .about-project figcaption {
+        font-size: 1.4rem; 
+    }
+
+    .resources-list li {
+        font-size: 1.4rem; 
+    }
+}

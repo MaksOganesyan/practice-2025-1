@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap');
+
+:root {
+    font-size: 62.5%; 
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+ul, ol {
+    list-style: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff; 
+    font-size: 2rem;
+}
+
+header {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-height: 50px; 
+    width: auto;
+    margin-right: 2rem; 
+}
+
+header nav {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+
+
+
+.annotation h1 {
+    text-align: center;
+}
+
+.annotation {
+    font-size: 3rem;
+    line-height: 170%;
+    margin: 2rem;
+}
+
+.annotation p {
+    white-space: pre-line;
+    margin-bottom: 4rem;
+}
+
+.annotation img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 50%; 
+}
+
+.annotation figcaption {
+    text-align: center; 
+    font-style: italic;
+    font-size: 1.4rem;
+    
+}
